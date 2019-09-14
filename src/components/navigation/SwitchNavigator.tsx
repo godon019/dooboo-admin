@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import React, { useContext } from 'react';
 
-import { AppContext } from '../../contexts';
+import { AppContext } from '../../providers/AppProvider';
 import Intro from '../screen/Intro';
 import Temp from '../screen/Temp';
 import { ThemeProvider } from 'styled-components';
