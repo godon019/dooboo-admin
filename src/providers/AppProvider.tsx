@@ -1,9 +1,17 @@
 import { Locale, User } from '../types';
 import React, { useReducer } from 'react';
 
-import { AppContext } from '../contexts';
 import STRINGS from '../../STRINGS';
 import { ThemeType } from '../theme';
+
+interface AppContext {
+  user?: User;
+  locale?: Locale;
+  state?: any;
+  dispatch?: any;
+}
+
+const AppContext = React.createContext<AppContext | null>(null);
 
 const AppConsumer = AppContext.Consumer;
 
