@@ -1,0 +1,350 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceModal] render renders without crashing 1`] = `
+<div
+  className="sc-dxgOiQ ksLhkK"
+>
+  <div
+    className="sc-ckVGcZ bPGTGF"
+  >
+    <form
+      onSubmit={[Function]}
+    >
+      <div
+        className="sc-kAzzGY jQociM"
+      >
+        <div
+          className="sc-chPdSV kYAPgs"
+        >
+          <img
+            className="sc-kGXeez imfAWV"
+            src="https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true"
+          />
+          <span
+            className="sc-kgoBCf lhwMoN"
+          >
+            | Admin Page
+          </span>
+        </div>
+        <div
+          className="sc-kpOJdX dyVmsv"
+        >
+          + 서비스 추가
+        </div>
+      </div>
+      <div
+        className="sc-jKJlTe cHRoYJ"
+      >
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            키값
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-jTzLTM czpJAl"
+            >
+              <input
+                className="sc-fjdhpX dqwVOL"
+                data-testid="keyName"
+                id="keyName"
+                name="keyName"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="KEYNAME"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            썸네일
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-bZQynM jwgxKa"
+            >
+              <div
+                className="sc-htoDjs iKOCRY"
+              >
+                <img
+                  className="sc-gqjmRU dmhDdt"
+                  data-testid="thumbnail-preview"
+                  src="https://s3.amazonaws.com/uifaces/faces/twitter/primozcigler/128.jpg"
+                />
+                <input
+                  className="sc-gzVnrw aZFdW"
+                  data-testid="thumbnail-file"
+                  id="thumbnail"
+                  name="thumbnail"
+                  onChange={[Function]}
+                  type="file"
+                />
+              </div>
+              <div
+                className="sc-dnqmqq kHYyxp"
+              >
+                <button
+                  className="sc-bdVaJa bEdxjs"
+                  data-testid="thumbnail-upload-btn"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "borderColor": "#069ccd",
+                      "height": null,
+                      "marginBottom": 0,
+                      "padding": ".7rem",
+                    }
+                  }
+                  type="button"
+                >
+                  <div>
+                    <span
+                      className="sc-bxivhb koiFyU"
+                      style={
+                        Object {
+                          "color": "#069ccd",
+                        }
+                      }
+                    >
+                      이미지 첨부
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            이미지
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-bZQynM jwgxKa"
+            >
+              <div
+                className="sc-htoDjs iKOCRY"
+              >
+                <img
+                  className="sc-gqjmRU dmhDdt"
+                  data-testid="image-preview"
+                  src="https://s3.amazonaws.com/uifaces/faces/twitter/primozcigler/128.jpg"
+                />
+                <input
+                  className="sc-gzVnrw aZFdW"
+                  data-testid="image-file"
+                  id="image"
+                  name="image"
+                  onChange={[Function]}
+                  type="file"
+                />
+              </div>
+              <div
+                className="sc-dnqmqq kHYyxp"
+              >
+                <button
+                  className="sc-bdVaJa bEdxjs"
+                  data-testid="image-upload-btn"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "backgroundColor": "#fff",
+                      "borderColor": "#069ccd",
+                      "height": null,
+                      "marginBottom": 0,
+                      "padding": ".7rem",
+                    }
+                  }
+                  type="button"
+                >
+                  <div>
+                    <span
+                      className="sc-bxivhb koiFyU"
+                      style={
+                        Object {
+                          "color": "#069ccd",
+                        }
+                      }
+                    >
+                      이미지 첨부
+                    </span>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            Web url
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-jTzLTM czpJAl"
+            >
+              <input
+                className="sc-fjdhpX dqwVOL"
+                data-testid="homepage"
+                id="homepage"
+                name="homepage"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="http://whats.sub"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            안드로이드 url
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-jTzLTM czpJAl"
+            >
+              <input
+                className="sc-fjdhpX dqwVOL"
+                data-testid="androidPlayStoreUrl"
+                id="androidPlayStoreUrl"
+                name="androidPlayStoreUrl"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="http://whats.sub"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            IOS url
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <div
+              className="sc-jTzLTM czpJAl"
+            >
+              <input
+                className="sc-fjdhpX dqwVOL"
+                data-testid="iosAppStoreUrl"
+                id="iosAppStoreUrl"
+                name="iosAppStoreUrl"
+                onBlur={[Function]}
+                onChange={[Function]}
+                type="text"
+                value="http://whats.sub"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          className="sc-iAyFgw ieLOwj"
+        >
+          <div
+            className="sc-hSdWYo ibQGur"
+          >
+            부가 설명
+          </div>
+          <div
+            className="sc-eHgmQL irHKpW"
+          >
+            <textarea
+              className="sc-cSHVUG ikreCl"
+              data-testid="memo"
+              id="memo"
+              name="memo"
+              onBlur={[Function]}
+              onChange={[Function]}
+              rows={10}
+              value="whatssub"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="sc-eNQAEJ xpVzC"
+      >
+        <button
+          className="sc-bwzfXH fWdDwp"
+          data-testid="serviceModalCloseBtn"
+          onClick={[Function]}
+          style={
+            Object {
+              "height": "60px",
+              "width": "25%",
+            }
+          }
+          type="button"
+        >
+          <div>
+            <span
+              className="sc-htpNat esLJJJ"
+              style={Object {}}
+            >
+              취소
+            </span>
+          </div>
+        </button>
+        <button
+          className="sc-bdVaJa bEdxjs"
+          data-testid="serviceSubmit"
+          style={
+            Object {
+              "height": "60px",
+              "width": "25%",
+            }
+          }
+          type="submit"
+        >
+          <div>
+            <span
+              className="sc-bxivhb koiFyU"
+              style={Object {}}
+            >
+              등록
+            </span>
+          </div>
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
+`;

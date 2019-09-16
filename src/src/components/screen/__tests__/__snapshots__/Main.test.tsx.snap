@@ -1,0 +1,1054 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Main] render renders without crashing 1`] = `
+<div
+  className="sc-cJSrbW ldwPaB"
+>
+  <div
+    className="sc-ksYbfQ kdSrnd"
+  >
+    <button
+      className="sc-bdVaJa bEdxjs"
+      data-testid="addServiceButton"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#069ccd",
+          "borderRadius": 0,
+          "height": "40px",
+          "marginBottom": 0,
+          "width": "120px",
+        }
+      }
+      type="button"
+    >
+      <div>
+        <span
+          className="sc-bxivhb koiFyU"
+          style={
+            Object {
+              "color": "#069ccd",
+            }
+          }
+        >
+          + 서비스 추가
+        </span>
+      </div>
+    </button>
+    <input
+      className="sc-frDJqD eIdidq"
+      onChange={[Function]}
+      placeholder=" 🔍 텍스트를 입력하세요"
+      value=""
+    />
+  </div>
+  <div
+    className="sc-bZQynM EvJhB"
+  >
+    <table
+      className="sc-gzVnrw cfgINS"
+    >
+      <thead
+        className="sc-htoDjs ebARWv"
+      >
+        <tr
+          className="sc-iwsKbI jxqJyA"
+        >
+          <th
+            className="sc-dnqmqq kRwwst"
+          >
+            이름 영문
+          </th>
+          <th
+            className="sc-dnqmqq kRwwst"
+          >
+            이름 국문
+          </th>
+          <th
+            className="sc-dnqmqq kRwwst"
+          >
+            썸네일
+          </th>
+          <th
+            className="sc-dnqmqq kRwwst"
+          >
+            설정
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="sc-gZMcBi fqKXKe"
+      >
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-45265"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-45265"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Schmeler - Simonis
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-45265"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Schmeler - Simonis
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-45265"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/stayuber/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-45265"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-45265"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-45265"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-28620"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-28620"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Rau, Johnston and Smitham
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-28620"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Rau, Johnston and Smitham
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-28620"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/abdots/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-28620"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-28620"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-28620"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-22283"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-22283"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Bayer, Windler and King
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-22283"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Bayer, Windler and King
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-22283"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/artvavs/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-22283"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-22283"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-22283"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-66822"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-66822"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            McGlynn LLC
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-66822"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            McGlynn LLC
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-66822"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/snowwrite/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-66822"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-66822"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-66822"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-43768"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-43768"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Effertz, Jerde and Lang
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-43768"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Effertz, Jerde and Lang
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-43768"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/amywebbb/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-43768"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-43768"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-43768"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-40377"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-40377"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Zemlak - Bosco
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-40377"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Zemlak - Bosco
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-40377"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/pifagor/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-40377"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-40377"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-40377"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-9173"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-9173"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Gleason Inc
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-9173"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Gleason Inc
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-9173"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/sdidonato/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-9173"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-9173"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-9173"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-94720"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-94720"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Cormier - Hegmann
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-94720"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Cormier - Hegmann
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-94720"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/8d3k/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-94720"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-94720"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-94720"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-35328"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-35328"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Greenfelder, Senger and Dickens
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-35328"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Greenfelder, Senger and Dickens
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-35328"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/n3dmax/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-35328"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-35328"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-35328"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr
+          className="sc-iwsKbI jxqJyA"
+          data-testid="tableRow-1369"
+          onClick={[Function]}
+        >
+          <td
+            className="sc-gqjmRU sc-VigVT iNjQrC"
+            data-testid="nameCell-1369"
+            label="SERVICE_LIST_TABLE_LABEL_NAME"
+          >
+            Murphy and Sons
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT idSjLk"
+            data-testid="nameKrCell-1369"
+            label="SERVICE_LIST_TABLE_LABEL_NAME_KR"
+          >
+            Murphy and Sons
+          </td>
+          <td
+            className="sc-gqjmRU sc-VigVT djkRRs"
+            data-testid="thumbnailCell-1369"
+            label="SERVICE_LIST_TABLE_LABEL_THUMBNAIL"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="sc-jzJRlG byHcWR"
+            >
+              <img
+                className="sc-fjdhpX cCeMqs"
+                src="https://s3.amazonaws.com/uifaces/faces/twitter/codysanfilippo/128.jpg"
+              />
+            </div>
+            <div
+              className="sc-cSHVUG kVZMia"
+            >
+              <img
+                className="sc-chPdSV bwwmPQ"
+                src="test-file-stub"
+              />
+              <div
+                className="sc-kAzzGY fNXisW"
+              >
+                미리보기
+              </div>
+            </div>
+          </td>
+          <td
+            className="sc-gqjmRU sc-jTzLTM jSfwan"
+            data-testid="settingCell-1369"
+            label="SERVICE_LIST_TABLE_LABEL_SETTING"
+            onClick={[Function]}
+          >
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="updateServiceButton-1369"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                수정
+              </div>
+            </div>
+            <div
+              className="sc-kpOJdX fJVbGz"
+              data-testid="deleteServiceButton-1369"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-kgoBCf beOYFC"
+              >
+                <img
+                  className="sc-kGXeez dzXNDC"
+                  src="test-file-stub"
+                />
+                삭제
+              </div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div
+    className="sc-hmzhuo hNsChW"
+  >
+    <ul
+      className="pg-ul"
+    >
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          «
+        </a>
+      </li>
+      <li
+        className="disabled"
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          ⟨
+        </a>
+      </li>
+      <li
+        className="active"
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item pg-active-item"
+          href="#"
+        >
+          1
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          2
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          3
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          4
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          5
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          ⟩
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a
+          className="pg-item"
+          href="#"
+        >
+          »
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+`;

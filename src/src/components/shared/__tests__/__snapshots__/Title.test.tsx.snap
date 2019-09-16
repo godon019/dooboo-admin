@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Title] render renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa dzGXzv"
+>
+  <div
+    className="sc-bwzfXH emXnOW"
+  >
+    <img
+      className="sc-bxivhb dcjKSD"
+    />
+    <span
+      className="sc-htpNat bGakfH"
+    >
+      | Admin Page
+    </span>
+  </div>
+  <div
+    className="sc-ifAKCX cSmKN"
+  />
+</div>
+`;

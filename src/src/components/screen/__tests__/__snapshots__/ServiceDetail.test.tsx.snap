@@ -1,0 +1,406 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ServiceDetail] render renders without crashing 1`] = `
+<div
+  className="sc-dxgOiQ UrOXh"
+>
+  <div
+    className="sc-kAzzGY jQociM"
+  >
+    <div
+      className="sc-chPdSV kYAPgs"
+    >
+      <img
+        className="sc-kGXeez gziYPY"
+        src="https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true"
+      />
+      <span
+        className="sc-kgoBCf MZvhR"
+      >
+        | Admin Page
+      </span>
+    </div>
+    <div
+      className="sc-kpOJdX dyVmsv"
+    />
+  </div>
+  <div
+    className="sc-kEYyzF joYITF"
+  >
+    <div
+      className="sc-ckVGcZ kHlwpq"
+    >
+      <img
+        src="https://s3.amazonaws.com/uifaces/faces/twitter/kylefrost/128.jpg"
+        style={
+          Object {
+            "borderRadius": "5px",
+            "marginRight": "0.5em",
+            "width": "50px",
+          }
+        }
+      />
+      <div
+        className="sc-eNQAEJ khIdJY"
+      >
+        Netflix
+      </div>
+    </div>
+    <div
+      className="sc-ckVGcZ kHlwpq"
+    >
+      <div
+        className="sc-jKJlTe jNsizF"
+      >
+        URL
+      </div>
+      <div
+        className="sc-iAyFgw iEMxhb"
+      >
+        netflix.com
+      </div>
+    </div>
+    <div
+      className="sc-ckVGcZ kHlwpq"
+    >
+      <div
+        className="sc-jKJlTe jNsizF"
+      >
+        설명
+      </div>
+      <div
+        className="sc-iAyFgw iEMxhb"
+      >
+        넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 
+      </div>
+    </div>
+    <div
+      className="sc-kkGfuU eOACAU"
+    >
+      <div
+        className="sc-hMqMXs hmGWOD"
+      >
+        상품 리스트
+      </div>
+      <button
+        className="sc-bdVaJa bEdxjs"
+        data-testid="addSubsButton"
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundColor": "#fff",
+            "borderColor": "#069ccd",
+            "borderRadius": 0,
+            "height": "40px",
+            "marginBottom": 0,
+            "width": "9em",
+          }
+        }
+        type="button"
+      >
+        <div>
+          <span
+            className="sc-bxivhb koiFyU"
+            style={
+              Object {
+                "color": "#069ccd",
+              }
+            }
+          >
+            + 상품 추가
+          </span>
+        </div>
+      </button>
+    </div>
+    <div
+      className="sc-bZQynM gBiFCx"
+    >
+      <table
+        className="sc-gzVnrw cfgINS"
+      >
+        <thead
+          className="sc-htoDjs ebARWv"
+        >
+          <tr
+            className="sc-iwsKbI hRPFPc"
+          >
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              ID
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              상품명
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              통화
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              가격
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              갱신주기
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              갱신단위
+            </th>
+            <th
+              className="sc-dnqmqq kRwwst"
+            >
+              설정
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="sc-gZMcBi fqKXKe"
+        >
+          <tr
+            className="sc-iwsKbI hRPFPc"
+            data-testid="tableRow-1"
+            onClick={[Function]}
+          >
+            <td
+              className="sc-gqjmRU sc-VigVT jjrtKm"
+              label="SERVICE_LABEL_ID"
+            >
+              1
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT bCuruP"
+              label="SERVICE_LABEL_NAME"
+            >
+              Basic
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT fVTRQk"
+              label="SERVICE_LABEL_PRICE_PLAN_CURRENCY"
+            >
+              KRW
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jDXSWN"
+              label="SERVICE_LABEL_PRICE"
+            >
+              5000
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jLxIZF"
+              label="SERVICE_LABEL_PERIOD_TYPE"
+            >
+              month
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT eQTEjG"
+              label="SERVICE_LABEL_PERIOD_UNIT"
+            >
+              1
+            </td>
+            <td
+              className="sc-gqjmRU sc-jTzLTM dEXIZk"
+              label="SERVICE_LABEL_SETTING"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="updateServiceButton-1"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  수정
+                </div>
+              </div>
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="deleteSubsButton-1"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  삭제
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="sc-iwsKbI hRPFPc"
+            data-testid="tableRow-2"
+            onClick={[Function]}
+          >
+            <td
+              className="sc-gqjmRU sc-VigVT jjrtKm"
+              label="SERVICE_LABEL_ID"
+            >
+              2
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT bCuruP"
+              label="SERVICE_LABEL_NAME"
+            >
+              Pro
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT fVTRQk"
+              label="SERVICE_LABEL_PRICE_PLAN_CURRENCY"
+            >
+              KRW
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jDXSWN"
+              label="SERVICE_LABEL_PRICE"
+            >
+              120000
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jLxIZF"
+              label="SERVICE_LABEL_PERIOD_TYPE"
+            >
+              year
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT eQTEjG"
+              label="SERVICE_LABEL_PERIOD_UNIT"
+            >
+              1
+            </td>
+            <td
+              className="sc-gqjmRU sc-jTzLTM dEXIZk"
+              label="SERVICE_LABEL_SETTING"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="updateServiceButton-2"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  수정
+                </div>
+              </div>
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="deleteSubsButton-2"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  삭제
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr
+            className="sc-iwsKbI hRPFPc"
+            data-testid="tableRow-3"
+            onClick={[Function]}
+          >
+            <td
+              className="sc-gqjmRU sc-VigVT jjrtKm"
+              label="SERVICE_LABEL_ID"
+            >
+              3
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT bCuruP"
+              label="SERVICE_LABEL_NAME"
+            >
+              Special
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT fVTRQk"
+              label="SERVICE_LABEL_PRICE_PLAN_CURRENCY"
+            >
+              USD
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jDXSWN"
+              label="SERVICE_LABEL_PRICE"
+            >
+              110
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT jLxIZF"
+              label="SERVICE_LABEL_PERIOD_TYPE"
+            >
+              week
+            </td>
+            <td
+              className="sc-gqjmRU sc-VigVT eQTEjG"
+              label="SERVICE_LABEL_PERIOD_UNIT"
+            >
+              1
+            </td>
+            <td
+              className="sc-gqjmRU sc-jTzLTM dEXIZk"
+              label="SERVICE_LABEL_SETTING"
+              onClick={[Function]}
+            >
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="updateServiceButton-3"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  수정
+                </div>
+              </div>
+              <div
+                className="sc-jzJRlG dMqInb"
+                data-testid="deleteSubsButton-3"
+                onClick={[Function]}
+              >
+                <div
+                  className="sc-cSHVUG kVZMia"
+                >
+                  <img
+                    className="sc-fjdhpX bpzQue"
+                    src="test-file-stub"
+                  />
+                  삭제
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

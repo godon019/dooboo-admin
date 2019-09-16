@@ -3,6 +3,11 @@ node_modules/
 /dist/*
 !/dist/*.html
 !/dist/favicon.ico
+!/dist/styles.css
 coverage/
 package-lock.json
-.vscode/
+.vscode/settings.json
+storybook-static/
+#IDE
+.idea/
+

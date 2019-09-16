@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Cell] render renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa jGfYvm"
+>
+  <label
+    className="sc-bwzfXH fPyPqn"
+  >
+    name
+  </label>
+  nick
+</div>
+`;

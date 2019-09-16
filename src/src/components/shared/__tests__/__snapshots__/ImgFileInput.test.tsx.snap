@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[ImgFileInput] render renders without crashing 1`] = `
+<div
+  className="sc-bZQynM jwgxKa"
+>
+  <div
+    className="sc-htoDjs iKOCRY"
+  >
+    <span
+      className="sc-iwsKbI bGxQVD"
+      data-testid="defaultPreview"
+    >
+      이미지를 첨부해주세요. ( 형식 : jpg, png, gif | 크기 : 512x512 )
+    </span>
+    <input
+      className="sc-gzVnrw aZFdW"
+      data-testid="imgfile-name-file"
+      id="imgfile-id"
+      name="imgfile-name"
+      type="file"
+    />
+  </div>
+  <div
+    className="sc-dnqmqq kHYyxp"
+  >
+    <button
+      className="sc-bdVaJa bEdxjs"
+      data-testid="imgfile-name-upload-btn"
+      onClick={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "#069ccd",
+          "height": null,
+          "marginBottom": 0,
+          "padding": ".7rem",
+        }
+      }
+      type="button"
+    >
+      <div>
+        <span
+          className="sc-bxivhb koiFyU"
+          style={
+            Object {
+              "color": "#069ccd",
+            }
+          }
+        >
+          이미지 첨부
+        </span>
+      </div>
+    </button>
+  </div>
+</div>
+`;

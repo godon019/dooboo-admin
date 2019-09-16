@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Input] render renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa elFmeq"
+>
+  <input
+    className="sc-bwzfXH faoLVF"
+    name="name"
+    type="text"
+  />
+</div>
+`;

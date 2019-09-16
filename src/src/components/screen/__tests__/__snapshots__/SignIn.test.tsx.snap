@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[SignIn] render renders without crashing 1`] = `
+<div
+  className="sc-chPdSV bkIapS"
+>
+  <div
+    className="sc-jTzLTM ihSsTl"
+  >
+    <div
+      className="sc-fjdhpX jeAUlG"
+    >
+      <img
+        className="sc-cSHVUG gguuzs"
+        src="https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true"
+      />
+      <span
+        className="sc-jzJRlG kgEAHB"
+      >
+        | Admin Page
+      </span>
+    </div>
+    <div
+      className="sc-kAzzGY iQvEvC"
+    />
+  </div>
+  <div
+    className="sc-kgoBCf bcGaPZ"
+  >
+    <div
+      className="sc-kGXeez iNpFKN"
+    >
+      어드민 로그인
+    </div>
+    <form
+      className="sc-dnqmqq gZXnwY"
+      onSubmit={[Function]}
+    >
+      <div
+        className="sc-iwsKbI fJNkWy"
+      >
+        <label
+          className="sc-gZMcBi gfQqjX"
+          htmlFor="email"
+        >
+          이메일:
+        </label>
+        <div
+          className="sc-bZQynM bYznNk"
+        >
+          <input
+            className="sc-gzVnrw jzxJOR"
+            data-testid="email"
+            name="email"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="email"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="sc-iwsKbI fJNkWy"
+      >
+        <label
+          className="sc-gZMcBi gfQqjX"
+        >
+          비밀번호:
+        </label>
+        <div
+          className="sc-bZQynM bYznNk"
+        >
+          <input
+            className="sc-gzVnrw jzxJOR"
+            data-testid="password"
+            name="password"
+            onBlur={[Function]}
+            onChange={[Function]}
+            type="password"
+            value=""
+          />
+        </div>
+      </div>
+      <button
+        className="sc-bdVaJa bEdxjs"
+        data-testid="submit"
+        disabled={false}
+        style={
+          Object {
+            "height": "60px",
+          }
+        }
+        type="submit"
+      >
+        <div>
+          <span
+            className="sc-bxivhb koiFyU"
+            style={Object {}}
+          >
+            로그인
+          </span>
+        </div>
+      </button>
+    </form>
+    <hr
+      className="sc-kpOJdX loZgIF"
+    />
+    <div
+      className="sc-dxgOiQ cmUUZq"
+    >
+      <a
+        className="sc-ckVGcZ ipuqAr"
+        href="#"
+      >
+        회원가입
+      </a>
+      <span
+        className="sc-jKJlTe frEjVh"
+      >
+         | 
+      </span>
+      <a
+        className="sc-ckVGcZ ipuqAr"
+        href="#"
+      >
+        비밀번호 찾기
+      </a>
+    </div>
+  </div>
+</div>
+`;

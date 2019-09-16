@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Temp] render renders without crashing 1`] = `
+<div
+  className="sc-bZQynM gtejQa"
+>
+  <button
+    className="sc-bdVaJa bEdxjs"
+    onClick={[Function]}
+    style={
+      Object {
+        "height": "60px",
+      }
+    }
+    type="button"
+  >
+    <div>
+      <span
+        className="sc-bxivhb koiFyU"
+        style={Object {}}
+      >
+        back to tab page
+      </span>
+    </div>
+  </button>
+</div>
+`;

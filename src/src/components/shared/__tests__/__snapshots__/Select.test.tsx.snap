@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Select] render renders without crashing 1`] = `
+<div
+  className="sc-bdVaJa jbiJJs"
+>
+  <div
+    className="sc-ifAKCX hVKZvS"
+    onClick={[Function]}
+  >
+    <input
+      className="sc-bxivhb jHYKyw"
+      name="color"
+      readOnly={true}
+      type="text"
+      value="빨강"
+    />
+    <img
+      alt="아랫 화살표"
+      src="test-file-stub"
+    />
+  </div>
+</div>
+`;

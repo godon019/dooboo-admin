@@ -1,0 +1,15 @@
+{
+  "projectName": "whatssub",
+  "projectOwner": "dooboolab",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 60,
+  "commit": true,
+  "commitConvention": "eslint",
+  "contributors": [
+  ],
+  "contributorsPerLine": 7
+}
