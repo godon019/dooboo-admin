@@ -3,11 +3,16 @@ import * as renderer from 'react-test-renderer';
 import Button from '../Button';
 import { IC_FACEBOOK_W } from '../../../utils/Icons';
 import React from 'react';
+import ThemeProvider from '../../../providers/ThemeProvider';
 
 // test for the pure component
 describe('[Button] shared component test', () => {
   let tree: any;
-  const component: any = <Button inverted={true} text='Button 2nd test' />;
+  const component: any = (
+    <ThemeProvider>
+      <Button inverted={true} text='Button 2nd test' />
+    </ThemeProvider>
+  );
 
   it('component and snapshot matches', () => {
     tree = renderer.create(component).toJSON();
@@ -23,7 +28,11 @@ describe('[Transparent] interaction', () => {
 
   let rendered: renderer.ReactTestRenderer;
   let root: renderer.ReactTestInstance;
-  const component: any = <Button onClick={onClick} />;
+  const component: any = (
+    <ThemeProvider>
+      <Button onClick={onClick} />
+    </ThemeProvider>
+  );
 
   beforeAll(() => {
     rendered = renderer.create(component);
@@ -48,7 +57,11 @@ describe('[WhiteButton] interaction', () => {
   let component: any;
 
   it('should simulate onClick', () => {
-    component = <Button inverted={true} onClick={onClick} />;
+    component = (
+      <ThemeProvider>
+        <Button inverted={true} onClick={onClick} />
+      </ThemeProvider>
+    );
     rendered = renderer.create(component);
     root = rendered.root;
 
@@ -58,13 +71,21 @@ describe('[WhiteButton] interaction', () => {
   });
 
   it('should render isLoading status', () => {
-    component = <Button inverted={true} isLoading={true} />;
+    component = (
+      <ThemeProvider>
+        <Button inverted={true} isLoading={true} />
+      </ThemeProvider>
+    );
     rendered = renderer.create(component);
     root = rendered.root;
   });
 
   it('should render img status', () => {
-    component = <Button inverted={true} imgSrc={IC_FACEBOOK_W} />;
+    component = (
+      <ThemeProvider>
+        <Button inverted={true} imgSrc={IC_FACEBOOK_W} />
+      </ThemeProvider>
+    );
     rendered = renderer.create(component);
     root = rendered.root;
   });

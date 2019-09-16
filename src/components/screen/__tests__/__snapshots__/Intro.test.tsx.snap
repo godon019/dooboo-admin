@@ -2,23 +2,23 @@
 
 exports[`[Intro] screen rendering test should render outer component and snapshot matches 1`] = `
 <div
-  className="sc-bZQynM kSqyDp"
+  className="sc-bZQynM grfgbi"
 >
   <div
     className="sc-gzVnrw coPpBh"
   >
     <span
-      className="sc-dnqmqq ctyQgL"
+      className="sc-dnqmqq VQuaM"
     >
       
     </span>
     <span
-      className="sc-dnqmqq ctyQgL"
+      className="sc-dnqmqq VQuaM"
     >
       
     </span>
     <span
-      className="sc-dnqmqq ctyQgL"
+      className="sc-dnqmqq VQuaM"
     >
       
     </span>
@@ -27,57 +27,78 @@ exports[`[Intro] screen rendering test should render outer component and snapsho
     className="sc-htoDjs jtOwzg"
   >
     <button
-      className="sc-bdVaJa eovVDg"
+      className="sc-bwzfXH fWdDwp"
       onClick={[Function]}
       style={
         Object {
           "height": "60px",
         }
       }
+      type="button"
     >
       <div>
-        <img
-          className="sc-ifAKCX iaWYmM"
-          src="test-file-stub"
-        />
         <span
-          className="sc-bxivhb hZnkGD"
+          className="sc-htpNat esLJJJ"
+          style={Object {}}
         >
-          Login
+          회원가입 화면
         </span>
       </div>
     </button>
     <button
-      className="sc-bwzfXH czrGzF"
+      className="sc-bwzfXH fWdDwp"
       onClick={[Function]}
       style={
         Object {
           "height": "60px",
         }
       }
+      type="button"
     >
       <div>
         <span
-          className="sc-htpNat lnXBCo"
+          className="sc-htpNat esLJJJ"
+          style={Object {}}
         >
-          Navigate
+          로그인 화면
         </span>
       </div>
     </button>
     <button
-      className="sc-bwzfXH czrGzF"
+      className="sc-bwzfXH fWdDwp"
       onClick={[Function]}
       style={
         Object {
           "height": "60px",
         }
       }
+      type="button"
     >
       <div>
         <span
-          className="sc-htpNat lnXBCo"
+          className="sc-htpNat esLJJJ"
+          style={Object {}}
         >
-          Change theme
+          메인 화면
+        </span>
+      </div>
+    </button>
+    <button
+      className="sc-bwzfXH fWdDwp"
+      onClick={[Function]}
+      style={
+        Object {
+          "height": "60px",
+        }
+      }
+      type="button"
+    >
+      <div>
+        <span
+          className="sc-htpNat esLJJJ"
+          style={Object {}}
+        >
+          이동하기
         </span>
       </div>
     </button>

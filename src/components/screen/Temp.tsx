@@ -11,11 +11,11 @@ const Container = styled.div`
   padding: 50px;
 `;
 
-interface Props {
+interface IProps {
   history?: any;
 }
 
-function Temp(props: Props) {
+function Temp(props: IProps) {
   const { history } = props;
   return (
     <Container>

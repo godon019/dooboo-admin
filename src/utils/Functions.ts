@@ -22,10 +22,7 @@ const destroySessionStorage = (key: string) => {
   return sessionStorage.removeItem(key);
 };
 
-const checkImageExists = (
-  url: string,
-  callback: (err: Error, val: boolean) => void,
-) => {
+const checkImageExists = (url: string, callback: (err: Error, val: boolean) => void) => {
   const img = new Image();
   img.onload = function() {
     callback(null, true);

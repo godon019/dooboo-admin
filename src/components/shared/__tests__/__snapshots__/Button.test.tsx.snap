@@ -2,16 +2,18 @@
 
 exports[`[Button] shared component test component and snapshot matches 1`] = `
 <button
-  className="sc-bwzfXH czrGzF"
+  className="sc-bwzfXH fWdDwp"
   style={
     Object {
       "height": "60px",
     }
   }
+  type="button"
 >
   <div>
     <span
-      className="sc-htpNat lnXBCo"
+      className="sc-htpNat esLJJJ"
+      style={Object {}}
     >
       Button 2nd test
     </span>

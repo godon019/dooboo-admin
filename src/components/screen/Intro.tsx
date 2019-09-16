@@ -1,11 +1,18 @@
+import {
+  AppConsumer,
+  AppContext,
+  AppProvider as Provider,
+} from '../../providers';
 import { IC_FACEBOOK_W, IC_GOOGLE_W } from '../../utils/Icons';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { ThemeType, device } from '../../theme';
 
-import { AppContext } from '../../providers';
 import Button from '../shared/Button';
+import { IUser } from '../../types';
+import Modal from '../shared/Modal';
 import { Redirect } from 'react-router-dom';
-import { User } from '../../types';
+import { SUBS_LIST } from './ServiceDetail/mock';
+import SubsModal from '../ui/SubsModal/SubsModal';
 import { getString } from '../../../STRINGS';
 import styled from 'styled-components';
 
@@ -66,54 +73,19 @@ const Text = styled.span`
   color: ${(props) => props.theme.fontColor};
 `;
 
-interface Props {
+interface IProps {
   history: any;
   store?: any;
 }
 
-function Intro(props: Props) {
-  let timer: any;
+function Intro(props: IProps) {
   const { state, dispatch } = React.useContext(AppContext);
-  const [isLoggingIn, setIsLoggingIn] = React.useState(false);
-
-  const onLogin = () => {
-    dispatch({ type: 'reset-user' });
-    setIsLoggingIn(true);
-    timer = setTimeout(() => {
-      const user: User = {
-        displayName: 'dooboolab',
-        age: 30,
-        job: 'developer',
-      };
-      dispatch({ type: 'set-user', payload: user });
-      setIsLoggingIn(false);
-      clearTimeout(timer);
-    }, 1000);
-  };
-
-  const navigate = () => {
+  const navigate = (pathname: string) => {
     const location: object = {
-      pathname: '/404',
+      pathname,
       state: {},
     };
     props.history.push(location);
-  };
-
-  const changeTheme = () => {
-    let payload: object;
-    if (state.theme === ThemeType.LIGHT) {
-      payload = {
-        theme: ThemeType.DARK,
-      };
-    } else {
-      payload = {
-        theme: ThemeType.LIGHT,
-      };
-    }
-    dispatch({
-      type: 'change-theme-mode',
-      payload,
-    });
   };
 
   return (
@@ -125,20 +97,24 @@ function Intro(props: Props) {
       </ContentWrapper>
       <ButtonWrapper>
         <Button
-          imgSrc={IC_GOOGLE_W}
-          isLoading={isLoggingIn}
-          onClick={() => onLogin()}
-          text={getString('LOGIN')}
+          onClick={() => navigate('/signup')}
+          inverted={true}
+          text={getString('SIGN_UP_SCREEN')}
         />
         <Button
-          onClick={() => navigate()}
+          onClick={() => navigate('/signin')}
+          inverted={true}
+          text={getString('SIGN_IN_SCREEN')}
+        />
+        <Button
+          onClick={() => navigate('/main')}
+          inverted={true}
+          text={getString('MAIN_SCREEN')}
+        />
+        <Button
+          onClick={() => navigate('/404')}
           inverted={true}
           text={getString('NAVIGATE')}
-        />
-        <Button
-          onClick={() => changeTheme()}
-          inverted={true}
-          text={getString('CHANGE_THEME')}
         />
       </ButtonWrapper>
     </Container>

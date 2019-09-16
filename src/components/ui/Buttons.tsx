@@ -24,6 +24,9 @@ export const ButtonPrimary = styled('button')`
   &:active {
     opacity: 0.5;
   }
+  &:focus {
+    outline: none;
+  }
 `;
 
 export const ButtonPrimaryLight = styled('button')`
@@ -47,5 +50,8 @@ export const ButtonPrimaryLight = styled('button')`
   }
   &:active {
     opacity: 0.5;
+  }
+  &:focus {
+    outline: none;
   }
 `;

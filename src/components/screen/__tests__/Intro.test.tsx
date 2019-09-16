@@ -1,11 +1,19 @@
 import * as renderer from 'react-test-renderer';
 
-import { act, cleanup, fireEvent, render } from '@testing-library/react';
+import {
+  act,
+  cleanup,
+  fireEvent,
+  getByTestId,
+  render,
+  waitForElement,
+} from '@testing-library/react';
 
 import { AppProvider } from '../../../providers';
 import Button from '../../shared/Button';
 import Intro from '../Intro';
 import React from 'react';
+import ThemeProvider from '../../../providers/ThemeProvider';
 import { getString } from '../../../../STRINGS';
 
 const props = {
@@ -19,7 +27,9 @@ const props = {
 
 const component = (
   <AppProvider>
-    <Intro {...props} />
+    <ThemeProvider>
+      <Intro {...props} />
+    </ThemeProvider>
   </AppProvider>
 );
 
@@ -52,28 +62,19 @@ describe('[Intro] Interaction', () => {
 
   afterEach(cleanup);
 
-  it('should simulate [onLogin] click with testing library', () => {
-    jest.useFakeTimers();
-    renderResult = render(component);
-    fireEvent.click(renderResult.getByText(getString('LOGIN')));
-    expect(setTimeout).toHaveBeenCalledTimes(1);
-
-    act(() => {
-      jest.runAllTimers();
-    });
-
-    expect(clearTimeout).toHaveBeenCalledTimes(1);
-  });
-
-  it('should simulate [navigate] when clicked', () => {
+  it('should simulate [navigate to screen] when clicked', () => {
     rendered = renderer.create(component);
     root = rendered.root;
 
     const buttons = root.findAllByType(Button);
-    buttons[1].props.onClick();
-    expect(props.history.push).toBeCalledWith({
-      pathname: '/404',
-      state: {},
+
+    const navList = ['/signup', '/signin', '/main', '/404'];
+    navList.map((pathname, index) => {
+      buttons[index].props.onClick();
+      expect(props.history.push).toBeCalledWith({
+        pathname,
+        state: {},
+      });
     });
   });
 

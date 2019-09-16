@@ -24,6 +24,12 @@ const Label = styled.label`
   font-weight: bold;
 `;
 
+const SubmitButton = styled.button`
+  align-self: flex-end;
+  padding: 0.3em 0.5em;
+  font-size: 0.9em;
+`;
+
 const ErrorMessage = styled.div`
   color: red;
   font-size: 0.7em;

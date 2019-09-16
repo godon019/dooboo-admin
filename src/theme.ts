@@ -1,3 +1,7 @@
+interface ITheme {
+  colors: object;
+}
+
 const size = {
   mobileS: '320px',
   mobileM: '375px',
@@ -11,9 +15,9 @@ const size = {
 export enum ThemeType {
   LIGHT = 'LIGHT',
   DARK = 'DARK',
-};
+}
 
-const colors = {
+export const colors = {
   skyBlue: '#069ccd',
   whiteGray: '#f7f6f3',
   dusk: 'rgb(65,77,107)',
@@ -27,28 +31,28 @@ const colors = {
   darkBackgroundLight: '#393241',
 };
 
-const theme = {
+export const theme = {
   light: {
-    background: `linear-gradient(
-      to bottom right,
-      ${colors.lightBackground},
-      ${colors.lightBackgroundLight})`,
+    name: 'LIGHT', // for storybook theme provider addons
+    background: `linear-gradient(to bottom right, ${colors.lightBackground}, ${colors.lightBackgroundLight})`,
     btnPrimary: colors.skyBlue,
     btnPrimaryFont: 'white',
     btnPrimaryLight: colors.whiteGray,
     btnPrimaryLightFont: 'black',
     fontColor: 'black',
+    tableContentFontColor: '#8b8c8c',
+    tableHoverColor: colors.paleGray,
   },
   dark: {
-    background: `linear-gradient(
-      to bottom right,
-      ${colors.darkBackground},
-      ${colors.darkBackgroundLight})`,
+    name: 'DARK', // for storybook theme provider addons
+    background: `linear-gradient(to bottom right, ${colors.darkBackground}, ${colors.darkBackgroundLight})`,
     btnPrimary: colors.skyBlue,
     btnPrimaryFont: 'white',
     btnPrimaryLight: colors.whiteGray,
     btnPrimaryLightFont: 'black',
     fontColor: 'white',
+    tableContentFontColor: 'white',
+    tableHoverColor: colors.skyBlue,
   },
 };
 

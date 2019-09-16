@@ -3,8 +3,14 @@ import React, { Component, useState } from 'react';
 
 import { Formik } from 'formik';
 import SignInForm from './form';
+import Title from '../../shared/Title';
+import { WhenNarrow } from '../../../utils/Styles';
+import { WithSignUpApollo } from './WithApollo';
 import { getString } from '../../../../STRINGS';
 import styled from 'styled-components';
+
+// SignIn Page-wide font-size. styles resize proportionally by changing it
+const fontSize = `20px`;
 
 const ContentWrapper = styled.div`
   display: flex;
@@ -12,6 +18,9 @@ const ContentWrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 0 35%;
+  ${WhenNarrow} {
+    padding: 0 10%;
+  }
 `;
 const TitleText = styled.div`
   font-size: 1.3rem;
@@ -37,7 +46,7 @@ const SignUp: React.FC<SignUpProps> = (props) => {
           passwordConfirm: '',
         }}
         validate={(values) => {
-          const errors: {
+          let errors: {
             email?: string;
             name?: string;
             password?: string;
@@ -86,4 +95,5 @@ const SignUp: React.FC<SignUpProps> = (props) => {
     </ContentWrapper>
   );
 };
-export default SignUp;
+export { SignUp as PureSignUp };
+export default WithSignUpApollo(SignUp);

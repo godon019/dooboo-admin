@@ -1,36 +1,31 @@
-import { Locale, User } from '../types';
+import { ILocale, IUser } from '../types';
 import React, { useReducer } from 'react';
 
+import { AppContext } from '../contexts';
 import STRINGS from '../../STRINGS';
 import { ThemeType } from '../theme';
 
-interface AppContext {
-  user?: User;
-  locale?: Locale;
-  state?: any;
-  dispatch?: any;
-}
-
-const AppContext = React.createContext<AppContext | null>(null);
-
 const AppConsumer = AppContext.Consumer;
 
-interface Action {
+export interface IAction {
   type: 'reset-user' | 'set-user' | 'change-theme-mode';
   payload: any;
 }
 
-interface Props {
+export interface IState {
+  theme: ThemeType;
+  user: IUser;
+  locale?: ILocale;
+}
+interface IProps {
+  value?: {
+    state?: IState;
+    dispatch?: IAction;
+  };
   children?: any;
 }
 
-export interface State {
-  theme: ThemeType;
-  user: User;
-  locale?: Locale;
-}
-
-const initialState: State = {
+const initialState: IState = {
   theme: ThemeType.LIGHT,
   user: {
     displayName: '',
@@ -39,25 +34,46 @@ const initialState: State = {
   },
 };
 
-const reducer = (state: State, action: Action) => {
-  switch (action.type) {
+const changeTheme = (dispatch, state) => {
+  let payload: object;
+  if (state.theme === ThemeType.LIGHT) {
+    payload = {
+      theme: ThemeType.DARK,
+    };
+  } else {
+    payload = {
+      theme: ThemeType.LIGHT,
+    };
+  }
+  dispatch({
+    type: 'change-theme-mode',
+    payload,
+  });
+};
+
+const reducer = (state: IState, action: IAction) => {
+  const { type, payload } = action;
+  switch (type) {
     case 'reset-user':
       return { ...state, user: initialState.user };
     case 'set-user':
-      return { ...state, user: action.payload };
+      return { ...state, user: payload };
     case 'change-theme-mode':
-      return { ...state, theme: action.payload.theme };
+      return { ...state, theme: payload.theme };
     default:
       return null;
   }
 };
 
-const AppProvider = (props: Props) => {
+const AppProvider = (props: IProps) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const value = { state, dispatch };
-  const ContextProvider = AppContext.Provider;
-
-  return <ContextProvider value={value}>{props.children}</ContextProvider>;
+  const contexts = {
+    state,
+    dispatch,
+  };
+  return (
+    <AppContext.Provider value={contexts}>{props.children}</AppContext.Provider>
+  );
 };
 
 export { AppConsumer, AppProvider, AppContext };

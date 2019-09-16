@@ -8,6 +8,20 @@ const STATUS_CODE = {
   UNAUTHORIZED: 401, // 401
 };
 
-export {
-  STATUS_CODE as statusCode,
+export { STATUS_CODE as statusCode };
+
+export const GQL = {
+  serviceGroups: 'serviceGroups',
+  categories: 'categories',
+  services: 'services',
+  subscriptions: 'subscriptions',
+};
+
+export const ROUTE = {
+  signIn: '/signin',
+  signUp: '/signup',
+  main: '/main',
+  serviceGroup: '/service-group',
+  category: '/category',
+  serviceDetail: '/service-detail',
 };

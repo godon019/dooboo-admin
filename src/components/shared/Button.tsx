@@ -74,20 +74,20 @@ const Button: React.FC<ButtonProps> = ({
     borderColor: themeContext.btnPrimary,
     backgroundColor: '#fff',
   };
-  const outlineTextStyle = {
+  let outlineTextStyle = {
     color: themeContext.btnPrimary,
   };
-  const borderStyle = outline
+  let borderStyle = outline
     ? { ...customStyle, ...outlineBorderStyle }
     : customStyle;
-  const textStyle = outline
+  let textStyle = outline
     ? { ...customTextStyle, ...outlineTextStyle }
     : customTextStyle;
-  const btnBorderStyle = {
+  let btnBorderStyle = {
     ...defaultStyle,
     ...borderStyle,
   };
-  const btnType = type || 'button';
+  let btnType = type || 'button';
   if (inverted) {
     return (
       <ButtonPrimaryLight
