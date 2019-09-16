@@ -1,3 +1,5 @@
+export * from './auth';
+
 export interface User {
   displayName: string;
   age: number;

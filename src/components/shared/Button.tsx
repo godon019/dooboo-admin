@@ -1,15 +1,19 @@
 import { ButtonPrimary, ButtonPrimaryLight } from '../ui/Buttons';
+import React, { ButtonHTMLAttributes, useContext } from 'react';
+import styled, { CSSProp, ThemeContext } from 'styled-components';
 
-import React from 'react';
-import styled from 'styled-components';
-
-interface Props {
+interface ButtonProps {
   id?: string;
   inverted?: boolean;
+  outline?: boolean;
   imgSrc?: any;
   text?: string;
   onClick?: () => void;
   isLoading?: boolean;
+  customStyle?: object;
+  customTextStyle?: object;
+  type?: 'submit' | 'reset' | 'button';
+  disabled?: boolean;
 }
 
 const PrimaryTextLight = styled.span`
@@ -47,34 +51,79 @@ const Spinner = styled.div`
   }
 `;
 
-function Button(props: Props) {
-  const { inverted, onClick, imgSrc, text } = props;
+/**
+ * @param customStyle
+ * @example { 'border-color': 'orange', 'border-width': '3.21rem' }
+ */
+const Button: React.FC<ButtonProps> = ({
+  id,
+  inverted,
+  outline,
+  imgSrc,
+  text,
+  onClick,
+  isLoading,
+  customStyle = {},
+  customTextStyle = {},
+  type,
+  ...otherProps
+}) => {
+  const themeContext = useContext(ThemeContext);
+  const defaultStyle = { height: '60px' };
+  const outlineBorderStyle = {
+    borderColor: themeContext.btnPrimary,
+    backgroundColor: '#fff',
+  };
+  const outlineTextStyle = {
+    color: themeContext.btnPrimary,
+  };
+  const borderStyle = outline
+    ? { ...customStyle, ...outlineBorderStyle }
+    : customStyle;
+  const textStyle = outline
+    ? { ...customTextStyle, ...outlineTextStyle }
+    : customTextStyle;
+  const btnBorderStyle = {
+    ...defaultStyle,
+    ...borderStyle,
+  };
+  const btnType = type || 'button';
   if (inverted) {
     return (
-      <ButtonPrimaryLight style={{ height: '60px' }} onClick={onClick}>
-        {props.isLoading ? (
+      <ButtonPrimaryLight
+        style={btnBorderStyle}
+        onClick={onClick}
+        type={btnType}
+        {...otherProps}
+      >
+        {isLoading ? (
           <Spinner id='spinner' />
         ) : (
           <div>
-            {props.imgSrc ? <LogoImg src={props.imgSrc} /> : null}
-            <PrimaryTextLight>{props.text}</PrimaryTextLight>
+            {imgSrc ? <LogoImg src={imgSrc} /> : null}
+            <PrimaryTextLight style={textStyle}>{text}</PrimaryTextLight>
           </div>
         )}
       </ButtonPrimaryLight>
     );
   }
   return (
-    <ButtonPrimary style={{ height: '60px' }} onClick={onClick}>
-      {props.isLoading ? (
+    <ButtonPrimary
+      style={btnBorderStyle}
+      onClick={onClick}
+      type={btnType}
+      {...otherProps}
+    >
+      {isLoading ? (
         <Spinner id='spinner' />
       ) : (
         <div>
-          {props.imgSrc ? <LogoImg src={props.imgSrc} /> : null}
-          <PrimaryText>{props.text}</PrimaryText>
+          {imgSrc ? <LogoImg src={imgSrc} /> : null}
+          <PrimaryText style={textStyle}>{text}</PrimaryText>
         </div>
       )}
     </ButtonPrimary>
   );
-}
+};
 
 export default Button;
