@@ -50,7 +50,7 @@ const ServiceGroupModal: React.FC<ServiceGroupModalProps> = ({
                 : getString('SERVICE_GROUP_MODAL_UPDATE_TITLE')
             }
             src={
-              'https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true'
+              'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
             }
           />
         </HeaderDiv>

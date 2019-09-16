@@ -8,4 +8,4 @@ import styled from 'styled-components';
 const Story = () => <ApolloExample />;
 storiesOf('ApolloExample', module)
   .add('default', () => <Story />)
-  .add('whatssub', () => <WhatssubExample />);
+  .add('dooboolab', () => <WhatssubExample />);

@@ -145,7 +145,7 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
           <Title
             text={getString('SERVICE_ADD_BUTTON')}
             src={
-              'https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true'
+              'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
             }
           />
           <InputContentArea>

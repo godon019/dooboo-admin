@@ -110,7 +110,7 @@ const SubsModal: React.FC<SubsModalProps> = ({
           <Title
             text={getString('SUBS_MODAL_TITLE')}
             src={
-              'https://github.com/whatssub/whatssub-mobile/blob/master/assets/splash.gif?raw=true'
+              'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
             }
           />
         </HeaderDiv>

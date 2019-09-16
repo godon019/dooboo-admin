@@ -1,10 +1,10 @@
 [
-    {
-        "type": "Directory",
-        "name": "/Users/dongkyun/Documents/Projects/Whatssub Admin/whatssub-admin/assets/icons",
-        "parent_id": null,
-        "workspaceRoot": "/Users/dongkyun/Documents/Projects/Whatssub Admin/whatssub-admin",
-        "workspacePath": "assets/icons",
-        "id": "qhOf3d0Ip7zH21ym"
-    }
+  {
+    "type": "Directory",
+    "name": "/Users/dongkyun/Documents/Projects/Whatssub Admin/dooboo-admin/assets/icons",
+    "parent_id": null,
+    "workspaceRoot": "/Users/dongkyun/Documents/Projects/Whatssub Admin/dooboo-admin",
+    "workspacePath": "assets/icons",
+    "id": "qhOf3d0Ip7zH21ym"
+  }
 ]

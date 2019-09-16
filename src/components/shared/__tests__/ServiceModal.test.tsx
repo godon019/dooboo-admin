@@ -25,7 +25,7 @@
 //     'https://s3.amazonaws.com/uifaces/faces/twitter/primozcigler/128.jpg',
 //   image: 'https://s3.amazonaws.com/uifaces/faces/twitter/primozcigler/128.jpg',
 //   homepage: 'http://whats.sub',
-//   memo: 'whatssub',
+//   memo: 'dooboolab',
 //   iosAppStoreUrl: '',
 //   androidPlayStoreUrl: '',
 //   categoryId: '',
