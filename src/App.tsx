@@ -1,8 +1,8 @@
-import { AppContext, AppProvider } from './providers';
 import React, { useContext } from 'react';
 import { hydrate, render } from 'react-dom';
 
 import ApolloProviders from './providers/ApolloProvider';
+import { AppProvider } from './providers/AppProvider';
 import { AuthProvider } from './providers/AuthProvider';
 import { LoadingProvider } from './providers/LoadingProvider';
 import { LoggerProvider } from './providers/LoggerProvider';
@@ -11,9 +11,6 @@ import SwitchNavigator from './components/navigation/SwitchNavigator';
 import ThemeProvider from './providers/ThemeProvider';
 
 const rootElement = document.getElementById('app') as HTMLElement;
-/**
- * test comment for fix circle-ci test error
- */
 const Component = () => (
   <AppProvider>
     <ApolloProviders>

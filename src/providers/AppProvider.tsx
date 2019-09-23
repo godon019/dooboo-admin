@@ -1,8 +1,13 @@
 import React, { useReducer } from 'react';
 
-import { AppContext } from '../contexts';
 import STRINGS from '../../STRINGS';
 import { ThemeType } from '../theme';
+
+interface IAppContext {
+  state?: any;
+  dispatch?: any;
+}
+const AppContext = React.createContext<IAppContext | null>(null);
 
 const AppConsumer = AppContext.Consumer;
 

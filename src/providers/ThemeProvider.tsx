@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { ThemeType, createTheme } from '../theme';
 
-import { AppContext } from '../contexts';
+import { AppContext } from './AppProvider';
 import { ThemeProvider as StyledComponentThemeProvider } from 'styled-components';
 
 interface Props {
