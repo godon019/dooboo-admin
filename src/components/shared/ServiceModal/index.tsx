@@ -3,7 +3,6 @@ import * as Yup from 'yup';
 import {
   Category,
   ServiceFront,
-  ServiceGroup,
   ServiceServerOnlyValues,
 } from '../../../types';
 import {
@@ -39,7 +38,6 @@ export interface ServiceModalProps {
   onCloseServiceClick: () => void;
   serviceInfo: ServiceServerOnlyValues;
   categories: Array<Category>;
-  serviceGroups: Array<ServiceGroup>;
   onSubmitFinishedSuccess: (service: ServiceServerOnlyValues) => void;
   onHandleImgChange?: () => void;
   children?: React.ReactNode;
@@ -88,7 +86,6 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
       onSubmitFinishedSuccess,
       onHandleImgChange,
       categories,
-      serviceGroups,
       serviceInfo,
       children,
     },
@@ -104,7 +101,6 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
     } = useImgUpload();
 
     const { options: categoryOptions } = useOptions(categories);
-    const { options: serviceGroupOptions } = useOptions(serviceGroups);
 
     const initialValuesObj: ServiceServerOnlyValues = serviceInfo;
 
@@ -270,20 +266,7 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
                 onClick={(value) => setFieldValue('categoryId', value)}
               />
             </Cell>
-            {/* Fixing */}
-            <Cell
-              errors={errors}
-              label={'서비스그룹 키'}
-              htmlFor='serviceGroupId'
-              labelCss={LabelCss}
-            >
-              <Select
-                name='serviceGroupId'
-                options={serviceGroupOptions}
-                value={values.serviceGroupId}
-                onClick={(value) => setFieldValue('serviceGroupId', value)}
-              />
-            </Cell>
+
             <InputRowRoot>
               <InputRowKey>{getString('MEMO')}</InputRowKey>
               <InputRowValue>

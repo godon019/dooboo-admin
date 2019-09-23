@@ -5,11 +5,10 @@ import { DisplayState } from '../../../utils/DisplayState';
 import { ServiceModalProps } from '.';
 import { useCategories } from '../../screen/Category/useCategories.query';
 import { useServiceCreate } from './useServiceCreate.mutation';
-import { useServiceGroups } from '../../screen/ServiceGroup/useServiceGroups.query';
 import { useServiceUpdate } from './useServiceUpdate.mutation';
 
 type PropsToSubstitute = Pick<ServiceModalProps, 'onSubmitFinishedSuccess'>;
-type PropsToExclude = Pick<ServiceModalProps, 'categories' | 'serviceGroups'>;
+type PropsToExclude = Pick<ServiceModalProps, 'categories'>;
 type PropsToUse = Pick<ServiceModalProps, 'isNew'>;
 
 export function withServiceModalApollo<
@@ -23,12 +22,6 @@ export function withServiceModalApollo<
       error: catError,
       loading: catLoading,
     } = useCategories();
-
-    const {
-      result: servResult,
-      error: servError,
-      loading: servLoading,
-    } = useServiceGroups();
 
     const create = useServiceCreate();
     const update = useServiceUpdate();
@@ -55,7 +48,6 @@ export function withServiceModalApollo<
     };
     const propsToExclude: PropsToExclude = {
       categories: catResult,
-      serviceGroups: servResult,
     };
     const wholeProps: T = {
       ...props,
@@ -71,11 +63,6 @@ export function withServiceModalApollo<
             result: catResult,
             error: catError,
             loading: catLoading,
-          }}
-          serviceGroups={{
-            result: servResult,
-            error: servError,
-            loading: servLoading,
           }}
         />
       </WrappedComponent>

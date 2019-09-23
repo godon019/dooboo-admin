@@ -1,23 +1,17 @@
 import { BrowserRouter, Redirect, Route, Switch } from 'react-router-dom';
 import React, { useContext, useState } from 'react';
 
-import { AppContext } from '../../contexts';
 import { AuthContext } from '../../providers/AuthProvider';
 import Category from '../screen/Category/Category';
-import { Frame } from '../shared/Frame/Frame';
-import Intro from '../screen/Intro';
+import { Frame } from '../ui/Frame/Frame';
 import MainWithServiceModal from '../screen/Main';
 import { ROUTE } from '../../utils/Constants';
 import { RouteContext } from '../../providers/RouteProvider';
-import { SERVICE_LIST } from '../screen/Main/mock';
 import ServiceDetail from '../screen/ServiceDetail';
 import { ServiceFront } from '../../types';
-import ServiceGroupScreen from '../screen/ServiceGroup/ServiceGroup';
-import ServiceModal from '../shared/ServiceModal';
 import SignIn from '../screen/SignIn';
 import SignOut from '../ui/SignOut';
 import SignUp from '../screen/SignUp';
-import Temp from '../screen/Temp';
 
 const MakeSureSignedIn: React.FC = (props) => {
   const { isSignedIn } = useContext(AuthContext);
@@ -75,15 +69,6 @@ function SwitchNavigator(props: {}) {
                       route.history.push(ROUTE.serviceDetail);
                     }}
                   />
-                </MakeSureSignedIn>
-              )}
-            />
-            {/* Service Group */}
-            <Route
-              path={ROUTE.serviceGroup}
-              render={(param) => (
-                <MakeSureSignedIn>
-                  <ServiceGroupScreen />
                 </MakeSureSignedIn>
               )}
             />

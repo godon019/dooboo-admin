@@ -1,4 +1,3 @@
-import { ILocale, IUser } from '../types';
 import React, { useReducer } from 'react';
 
 import { AppContext } from '../contexts';
@@ -14,8 +13,6 @@ export interface IAction {
 
 export interface IState {
   theme: ThemeType;
-  user: IUser;
-  locale?: ILocale;
 }
 interface IProps {
   value?: {
@@ -27,11 +24,6 @@ interface IProps {
 
 const initialState: IState = {
   theme: ThemeType.LIGHT,
-  user: {
-    displayName: '',
-    age: 0,
-    job: '',
-  },
 };
 
 const changeTheme = (dispatch, state) => {
@@ -54,10 +46,6 @@ const changeTheme = (dispatch, state) => {
 const reducer = (state: IState, action: IAction) => {
   const { type, payload } = action;
   switch (type) {
-    case 'reset-user':
-      return { ...state, user: initialState.user };
-    case 'set-user':
-      return { ...state, user: payload };
     case 'change-theme-mode':
       return { ...state, theme: payload.theme };
     default:

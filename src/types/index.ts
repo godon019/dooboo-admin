@@ -1,15 +1,3 @@
-// TODO: remove this sample interface
-export interface IUser {
-  displayName: string;
-  age: number;
-  job: string;
-}
-
-export interface ILocale {
-  default: string;
-  current: string;
-}
-
 export interface ServiceServerOnlyValues {
   id: string;
   keyName: string;
@@ -54,22 +42,6 @@ export type CategoryTableLabel = Pick<
   CategoryFront,
   'id' | 'key' | 'description' | 'released' | 'nameEn' | 'nameKr'
 >;
-
-export interface ServiceGroup {
-  id: string;
-  key: string;
-  description: string;
-}
-export type ServiceGroupCreateMutation = Omit<ServiceGroup, 'id'>;
-export type ServiceGroupUpdateMutation = ServiceGroup;
-export type ServiceGroupFront = ServiceGroup & {
-  nameEn: string;
-  nameKr: string;
-};
-export type ServiceGroupTableLabel = Pick<
-  ServiceGroupFront,
-  'id' | 'key' | 'description' | 'nameEn' | 'nameKr'
-> & { setting: string };
 
 export interface Admin {
   id: string;

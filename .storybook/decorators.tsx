@@ -1,7 +1,7 @@
 import ApolloProviders from '../src/providers/ApolloProvider';
 import { AppProvider } from '../src/providers/AppProvider';
 import { AuthProvider } from '../src/providers/AuthProvider';
-import { Frame } from '../src/components/shared/Frame/Frame';
+import { Frame } from '../src/components/ui/Frame/Frame';
 import { LoadingProvider } from '../src/providers/LoadingProvider';
 import { LoggerProvider } from '../src/providers/LoggerProvider';
 import React from 'react';

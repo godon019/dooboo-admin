@@ -10,4 +10,5 @@ package-lock.json
 storybook-static/
 #IDE
 .idea/
+.favorites.json
 
