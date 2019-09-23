@@ -35,9 +35,6 @@ const Header: React.FC = (props) => {
         onLogoClick={() => {
           route.history.push(ROUTE.main);
         }}
-        src={
-          'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
-        }
         larger
       />
       <NavList>

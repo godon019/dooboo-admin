@@ -138,12 +138,7 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
       `;
       return (
         <form onSubmit={handleSubmit}>
-          <Title
-            text={getString('SERVICE_ADD_BUTTON')}
-            src={
-              'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
-            }
-          />
+          <Title text={getString('SERVICE_ADD_BUTTON')} />
           <InputContentArea>
             <InputRowRoot>
               <InputRowKey>{getString('SERVICE_NAME_KEY')}</InputRowKey>

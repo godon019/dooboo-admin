@@ -107,12 +107,7 @@ const SubsModal: React.FC<SubsModalProps> = ({
     <Modal isVisible={isVisible}>
       <ContainerDiv>
         <HeaderDiv>
-          <Title
-            text={getString('SUBS_MODAL_TITLE')}
-            src={
-              'https://github.com/dooboolab/dooboolab-mobile/blob/master/assets/splash.gif?raw=true'
-            }
-          />
+          <Title text={getString('SUBS_MODAL_TITLE')} />
         </HeaderDiv>
         <Formik<SubsNOp>
           // enableReinitialize={true}

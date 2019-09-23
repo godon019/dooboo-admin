@@ -34,12 +34,17 @@ type TitleProps = {
   onLogoClick?: () => void;
 };
 
-const Title: React.FC<TitleProps> = ({ text, src, larger, onLogoClick }) => {
+const Title: React.FC<TitleProps> = ({
+  text,
+  src = 'https://dooboolab.com/8a19465015cf5126862d9e850962f835.png',
+  larger,
+  onLogoClick,
+}) => {
   return (
     <AdminTitle>
       <LogoImgArea>
         <LogoImg src={src} larger={larger} onClick={onLogoClick} />
-        <TitleDesc larger={larger}>{`| Admin Page`}</TitleDesc>
+        <TitleDesc larger={larger}>{`| Admin`}</TitleDesc>
       </LogoImgArea>
       <Text>{text}</Text>
     </AdminTitle>
