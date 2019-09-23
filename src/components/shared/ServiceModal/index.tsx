@@ -50,12 +50,8 @@ const ServiceModalSchema = Yup.object().shape<ServiceServerOnlyValues>({
     getString('SERVICE_NAME_KEY') + ' ' + getString('INPUT_REQUIRED'),
   ),
   thumbnail: Yup.string(),
-  image: Yup.string(),
   homepage: Yup.string(),
-  androidPlayStoreUrl: Yup.string(),
-  iosAppStoreUrl: Yup.string(),
   categoryId: Yup.string().required('카테고리를 선택해 주세요'),
-  serviceGroupId: Yup.string().required('서비스 그룹을 선택해 주세요'),
   memo: Yup.string(),
 });
 
@@ -94,10 +90,6 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
     const {
       onFileChange: onThumbnailFileChange,
       uploadedFilename: thumbnailFileName,
-    } = useImgUpload();
-    const {
-      onFileChange: onImageFileChange,
-      uploadedFilename: imageFileName,
     } = useImgUpload();
 
     const { options: categoryOptions } = useOptions(categories);
@@ -177,26 +169,7 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
                 )}
               </InputRowValue>
             </InputRowRoot>
-            <InputRowRoot>
-              <InputRowKey>{getString('IMAGE')}</InputRowKey>
-              <InputRowValue>
-                <ImgFileInput
-                  previewImg={values.image}
-                  previewName={imageFileName}
-                  name='image'
-                  id='image'
-                  onChange={onImageFileChange({
-                    ...formikProps,
-                    field: 'image',
-                  })}
-                />
-                {errors && errors.image && (
-                  <FileUploadErrorMessage>
-                    {errors.image}
-                  </FileUploadErrorMessage>
-                )}
-              </InputRowValue>
-            </InputRowRoot>
+
             <InputRowRoot>
               <InputRowKey>{getString('WEB_PAGE')}</InputRowKey>
               <InputRowValue>
@@ -211,41 +184,6 @@ const ServiceModal = forwardRef<HTMLDivElement, ServiceModalProps>(
                   customCss={inputCss}
                 />
                 <ErrorMessage component={AlertArea} name='homepage' />
-              </InputRowValue>
-            </InputRowRoot>
-            <InputRowRoot>
-              <InputRowKey>{getString('ANDROID_PLAY_STORE_URL')}</InputRowKey>
-              <InputRowValue>
-                <Input
-                  data-testid={'androidPlayStoreUrl'}
-                  type='text'
-                  name='androidPlayStoreUrl'
-                  id='androidPlayStoreUrl'
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.androidPlayStoreUrl}
-                  customCss={inputCss}
-                />
-                <ErrorMessage
-                  component={AlertArea}
-                  name='androidPlayStoreUrl'
-                />
-              </InputRowValue>
-            </InputRowRoot>
-            <InputRowRoot>
-              <InputRowKey>{getString('IOS_APP_STORE_URL')}</InputRowKey>
-              <InputRowValue>
-                <Input
-                  data-testid={'iosAppStoreUrl'}
-                  type='text'
-                  name='iosAppStoreUrl'
-                  id='iosAppStoreUrl'
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.iosAppStoreUrl}
-                  customCss={inputCss}
-                />
-                <ErrorMessage component={AlertArea} name='iosAppStoreUrl' />
               </InputRowValue>
             </InputRowRoot>
             <Cell
@@ -388,12 +326,6 @@ const RowAlignRight = styled.div`
   display: flex;
   justify-content: flex-end;
   text-align: right;
-`;
-const ShortInputBox = styled.input`
-  ${inputCommonStyle}
-`;
-const LongInputBox = styled.textarea`
-  ${inputCommonStyle}
 `;
 
 const FileUploadErrorMessage = styled.div`

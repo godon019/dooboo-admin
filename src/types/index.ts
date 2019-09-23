@@ -2,12 +2,8 @@ export interface ServiceServerOnlyValues {
   id: string;
   keyName: string;
   thumbnail: string;
-  image: string;
   homepage: string;
-  iosAppStoreUrl: string;
-  androidPlayStoreUrl: string;
   categoryId: string;
-  serviceGroupId: string;
   memo: string;
 }
 export type ServiceCreateMutation = Omit<ServiceServerOnlyValues, 'id'>;

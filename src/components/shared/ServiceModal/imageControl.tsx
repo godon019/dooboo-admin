@@ -1,6 +1,5 @@
 import React, { useCallback, useContext, useState } from 'react';
 
-import { AuthContext } from '../../../providers/AuthProvider';
 import { FormikProps } from 'formik';
 import { ServiceServerOnlyValues } from '../../../types';
 import { fileApi } from '../../../apis/fileApi';

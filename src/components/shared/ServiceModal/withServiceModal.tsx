@@ -20,13 +20,9 @@ const createNewService = (): ServiceServerOnlyValues => ({
   id: '',
   keyName: '',
   thumbnail: '',
-  image: '',
   homepage: '',
   memo: '',
-  iosAppStoreUrl: '',
-  androidPlayStoreUrl: '',
   categoryId: '',
-  serviceGroupId: '',
 });
 
 export function withServiceModal<T extends ComponentPropsToExclude>(

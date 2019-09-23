@@ -21,7 +21,6 @@ export const GRAPH_QL = gql`
       id
       keyName
       thumbnail
-      image
     }
   }
 `;
@@ -33,12 +32,8 @@ const useCustomMutation = () => {
   const mutate = async ({
     keyName,
     thumbnail,
-    image,
     homepage,
-    iosAppStoreUrl,
-    androidPlayStoreUrl,
     categoryId,
-    serviceGroupId,
     memo,
   }: ServiceCreateMutation) => {
     const { data } = await _mutate({
@@ -48,12 +43,8 @@ const useCustomMutation = () => {
           // be careful not to include any unnecessary property, coz typing is not enough to filter them out
           keyName,
           thumbnail,
-          image,
           homepage,
-          iosAppStoreUrl,
-          androidPlayStoreUrl,
           categoryId,
-          serviceGroupId,
           memo,
         },
       },

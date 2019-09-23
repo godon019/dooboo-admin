@@ -23,9 +23,7 @@ export const GRAPH_QL = gql`
       id
       keyName
       thumbnail
-      image
       categoryId
-      serviceGroupId
     }
   }
 `;
@@ -38,12 +36,8 @@ const useCustomMutation = () => {
     id,
     keyName,
     thumbnail,
-    image,
     homepage,
-    iosAppStoreUrl,
-    androidPlayStoreUrl,
     categoryId,
-    serviceGroupId,
     memo,
   }: ServiceUpdateMutation) => {
     const { data } = await _mutate({
@@ -54,12 +48,8 @@ const useCustomMutation = () => {
           id,
           keyName,
           thumbnail,
-          image,
           homepage,
-          iosAppStoreUrl,
-          androidPlayStoreUrl,
           categoryId,
-          serviceGroupId,
           memo,
         },
       },

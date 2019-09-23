@@ -62,12 +62,8 @@ export const SERVICE_DETAIL: ServiceFront = {
   name: 'Netflix',
   nameKr: '넷플릭스',
   thumbnail: 'https://s3.amazonaws.com/uifaces/faces/twitter/kylefrost/128.jpg',
-  image: 'https://s3.amazonaws.com/uifaces/faces/twitter/kylefrost/128.jpg',
   homepage: 'netflix.com',
   memo:
     '넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. 넷플릭스 입니다. ',
-  iosAppStoreUrl: 'netflix.com',
-  androidPlayStoreUrl: 'netflix.com',
   categoryId: '',
-  serviceGroupId: '',
 };
