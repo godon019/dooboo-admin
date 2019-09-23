@@ -1,28 +1,18 @@
 import React, { Component } from 'react';
-import {
-  ServiceForServiceDetail,
-  ServiceFront,
-  SubsNOp,
-  SubsNOpFront,
-} from '../../../types';
+import { ServiceForServiceDetail, ServiceFront } from '../../../types';
 
 import Button from '../../shared/Button';
-import SubsTable from './SubsTable';
 import Title from '../../shared/Title';
 import { WhenNarrow } from '../../../utils/Styles';
 import { getString } from '../../../../STRINGS';
 import styled from 'styled-components';
-import { withServiceDetailApollo } from './withApollo';
-import { withSubsModal } from '../../ui/SubsModal/withModal';
 
 export interface IServiceDetail {
   history?: any;
   // Those Subs related click handlers are used in test
   onAddSubsClick?: (serviceId: string) => void;
-  onUpdateSubsClick?: (subs: SubsNOp) => void;
   onDeleteSubsClick?: (subsId: string) => void;
   serviceDetail: ServiceForServiceDetail;
-  subsList: Array<SubsNOpFront>;
 }
 
 function ServiceDetail(props: IServiceDetail) {
@@ -63,12 +53,10 @@ function ServiceDetail(props: IServiceDetail) {
           }}
         />
       </TableLabelAndControl>
-      <SubsTable {...propsToSubsTable} />
     </TableWrapper>
   );
 }
-export { ServiceDetail as PureServiceDetail };
-export default withServiceDetailApollo(withSubsModal(ServiceDetail));
+export default ServiceDetail;
 
 const Detail = styled.div`
   margin: 0.3em 5%;
